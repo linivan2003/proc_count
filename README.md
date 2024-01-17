@@ -1,20 +1,23 @@
 # A Kernel Seedling
-TODO: intro
+This is a skeleton for proc_count.c that returns an integer in /proc/count that is the number of running processes
+on the machine. It makes use of the kernel
 
 ## Building
 ```shell
-TODO: cmd for build
+make
 ```
 
 ## Running
 ```shell
-TODO: cmd for running binary
+sudo insmod proc_count.ko
+cat /proc/count
 ```
 TODO: results?
 
 ## Cleaning Up
 ```shell
-TODO: cmd for cleaning the built binary
+make clean
+sudo rmmod proc_count
 ```
 
 ## Testing
@@ -30,4 +33,4 @@ It should match release numbers as seen on https://www.kernel.org/.
 ```shell
 uname -r -s -v
 ```
-TODO: kernel ver?
+Linux 5.14.8-arch1-1 #1 SMP PREEMPT Sun, 26 Sep 2021 19:36:15 +0000
