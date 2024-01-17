@@ -24,7 +24,11 @@ sudo rmmod proc_count
 ```python
 python -m unittest
 ```
-TODO: results?
+...
+----------------------------------------------------------------------
+Ran 3 tests in 2.063s
+
+OK
 
 Report which kernel release version you tested your module on
 (hint: use `uname`, check for options with `man uname`).
